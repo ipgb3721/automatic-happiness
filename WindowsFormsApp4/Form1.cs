@@ -16,5 +16,39 @@ namespace WindowsFormsApp4
         {
             InitializeComponent();
         }
+
+        
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            float num1 = int.Parse(textBox1.Text);
+            float num2 = int.Parse(textBox2.Text);
+            float result = num1 + num2;
+            label1.Text = ("result :" +result.ToString());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            float num1 = int.Parse(textBox1.Text);
+            float num2 = int.Parse(textBox2.Text);
+            float result = num1 - num2;
+            label1.Text = ("result :" + result.ToString());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            float num1 = int.Parse(textBox1.Text);
+            float num2 = int.Parse(textBox2.Text);
+            float result = num1 * num2;
+            label1.Text = ("result :" + result.ToString());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            float num1 = int.Parse(textBox1.Text);
+            float num2 = int.Parse(textBox2.Text);
+            float result = num1 / num2;
+            label1.Text = ("result :" + result.ToString());
+        }
     }
 }
